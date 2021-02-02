@@ -50,7 +50,7 @@ def get_dll_directories():
     source_dir = os.path.join(ffi_dir, "..", "..", "..")
     install_lib_dir = os.path.join(ffi_dir, "..", "..", "..", "..")
 
-    dll_path = []
+    dll_path = ["/root/tvm/cmake-build-remote-debug/", "/Users/rqg/test/tvm/cmake-build-debug"]
 
     if os.environ.get("TVM_LIBRARY_PATH", None):
         dll_path.append(os.environ["TVM_LIBRARY_PATH"])

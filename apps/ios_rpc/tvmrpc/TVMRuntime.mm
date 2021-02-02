@@ -47,11 +47,16 @@
 #include "../../../src/runtime/rpc/rpc_socket_impl.cc"
 // Graph runtime
 #include "../../../src/runtime/graph/graph_runtime.cc"
+#include "../../../src/runtime/graph/graph_runtime_factory.cc"
 // Metal
 #include "../../../src/runtime/metal/metal_device_api.mm"
 #include "../../../src/runtime/metal/metal_module.mm"
 // CoreML
 #include "../../../src/runtime/contrib/coreml/coreml_runtime.mm"
+
+// tvm.contrib.sort
+#include "../../../src/runtime/contrib/sort/sort.cc"
+
 
 namespace dmlc {
 // Override logging mechanism
